@@ -40,7 +40,7 @@ function App() {
             onChange={handleInputChange}
           />
         </form>
-        <div>{emoji && <p>{emojiName}</p>}</div>
+        <div className="value">{emoji && <p>{emojiName}</p>}</div>
         <div className="emojiContainer">
           {Object.keys(emojisData)
             .slice(0, 15)
