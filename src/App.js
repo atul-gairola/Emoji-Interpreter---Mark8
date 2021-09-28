@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Know your emojies</h1>
       </header>
+      <main>
+        <input
+          type="text"
+          placeholder="Paste your emoji here to know it's name"
+        />
+        <div></div>
+      </main>
+      <footer>
+        <p>
+          Made with ❤️ by{" "}
+          <a href="https://www.atulgairola.tech/">Atul Gairola </a>
+        </p>
+      </footer>
     </div>
   );
 }
