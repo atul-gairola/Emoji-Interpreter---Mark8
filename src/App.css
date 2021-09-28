@@ -1,38 +1,53 @@
-.App {
+.app > header {
+  text-align: center;
+  padding: 20px 50px;
+}
+
+.app > main {
+  padding: 20px 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputForm {
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputForm > input {
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputForm > button {
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #000;
 }
 
-.App-link {
-  color: #61dafb;
+.emojiContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  place-content: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.emojiButton {
+  font-size: 2rem;
+  place-self: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
